@@ -4,7 +4,7 @@ A real-time 2D missile intercept simulator built in base MATLAB. Models proporti
 
 No toolboxes required.
 
-![sim screenshot](screenshot.png)
+![sim screenshot](sim_screenshot.png)
 
 ## Run
 
