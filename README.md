@@ -26,11 +26,11 @@ No toolboxes required.
 | Evasive | Compound sinusoidal heading changes |
 
 ## Controls
-- **Nav Const N** — proportional navigation gain (2 to 8)
-- **MSL Speed** — missile speed in m/s, up to 2700 m/s (Mach 8)
-- **TGT Speed** — target speed in m/s, up to 1100 m/s (Mach 3.3)
-- **START / PAUSE / RESET** — simulation flow control
-- **Camera** — Follow, Global view, or Missile chase
+- **Nav Const N** - proportional navigation gain (2 to 8)
+- **MSL Speed** - missile speed in m/s, up to 2700 m/s (Mach 8)
+- **TGT Speed** - target speed in m/s, up to 1100 m/s (Mach 3.3)
+- **START / PAUSE / RESET** - simulation flow control
+- **Camera** - Follow, Global view, or Missile chase
 
 ## HUD metrics
 Live telemetry includes closing velocity, LOS angle and rate, commanded acceleration in g, range, and time-to-go.
