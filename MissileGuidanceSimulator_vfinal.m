@@ -38,7 +38,6 @@ fig = figure('Name','Missile Guidance Simulator', ...
     'Units','pixels','Position',[60 60 1380 820], ...
     'CloseRequestFcn',@onClose);
 
-% axes bottom raised to 0.20 so xlabel is not clipped by control strip
 ax = axes('Parent',fig, ...
     'Units','normalized','Position',[0.03 0.20 0.62 0.77], ...
     'Color',[0.004 0.010 0.022], ...
@@ -217,7 +216,6 @@ doReset();
     end
 
     function rdctl()
-        % read directly from handles — no findobj, no search overhead
         S.N    = sN.Value;
         S.mspd = sms.Value;
         S.tspd = sts.Value;
@@ -256,7 +254,6 @@ doReset();
                 S.hit = true;  S.run = false;
                 draw(); telem();
                 mid = 0.5*(S.msl.pos + S.tgt.pos);
-                % offset banner upward so it clears the trajectory lines
                 off = diff(ylim(ax)) * 0.12;
                 set(hst,'String', ...
                     sprintf('TARGET INTERCEPTED   t = %.2f s   miss distance = %.1f m',S.t,S.mnd), ...
